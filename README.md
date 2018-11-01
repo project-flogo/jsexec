@@ -22,6 +22,8 @@ The available response `outputs` are as follows:
 | errorMessage | string | The error message |
 | result | JSON object | The result object from the javascript code  |
 
+## Microgateway Usage
+
 A sample `service` definition is:
 
 ```json
