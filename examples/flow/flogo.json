@@ -1,0 +1,85 @@
+{
+  "name": "MyProxy",
+  "type": "flogo:app",
+  "version": "1.0.0",
+  "description": "This is a simple proxy.",
+  "properties": null,
+  "channels": null,
+  "triggers": [
+    {
+      "name": "flogo-rest",
+      "id": "MyProxy",
+      "ref": "github.com/project-flogo/contrib/trigger/rest",
+      "settings": {
+        "port": "9096"
+      },
+      "handlers": [
+        {
+          "settings": {
+            "method": "GET",
+            "path": "/calculate"
+          },
+          "actions": [
+            {
+              "id": "microgateway:JS"
+            }
+          ]
+        },
+        {
+          "settings": {
+            "method": "GET",
+            "path": "/calculate"
+          },
+          "actions": [
+            {
+              "id": "flow:JS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "flow:JS",
+      "compressed": false,
+      "data": {
+        "name": "JS",
+        "tasks": [
+          {
+            "id": "js",
+            "type": "basic",
+            "name": "js",
+            "activity": {
+              "ref": "github.com/project-flogo/exec",
+              "settings": {
+                "script": "result.sum = parameters.a + parameters.b"
+              },
+              "input": {
+                "parameters": {
+                  "a": 1.0,
+                  "b": 2.0
+                }
+              },
+              "output": {
+                "code": 200,
+                "data": "result"
+              }
+            }
+          }
+        ],
+        "links": []
+      }
+    }
+  ],
+  "actions": [
+    {
+      "ref": "github.com/project-flogo/flow",
+      "settings": {
+        "uri": "flow:JS"
+      },
+      "id": "flow:JS",
+      "metadata": null
+    }
+  ]
+}
