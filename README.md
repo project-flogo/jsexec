@@ -1,3 +1,25 @@
+# Development
+
+## Testing
+
+To run tests issue the following command in the root of the project:
+
+```bash
+go test -p 1 ./...
+```
+
+The `-p 1` is needed to prevent tests from being run in parallel. To re-run the tests first run the following:
+
+```bash
+go clean -testcache
+```
+
+To skip the integration tests use the `-short` flag:
+
+```bash
+go test -p 1 -short ./...
+```
+
 # Javascript Execution Activity
 
 The `jsexec` activity evaluates a javascript `script` along with provided `parameters` and returns the result in the `outputs`.
