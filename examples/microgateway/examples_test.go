@@ -12,6 +12,8 @@ import (
 
 	"github.com/project-flogo/core/engine"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/project-flogo/microgateway/api"
 )
 
 func Drain(port string) {
@@ -42,6 +44,7 @@ type Response struct {
 }
 
 func testApplication(t *testing.T, e engine.Engine) {
+	defer api.ClearResources()
 	Drain("9096")
 	err := e.Start()
 	assert.Nil(t, err)
