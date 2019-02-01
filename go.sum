@@ -45,6 +45,8 @@ github.com/project-flogo/core v0.9.0-alpha.3.0.20181105051932-8e2356547b1a/go.mo
 github.com/project-flogo/core v0.9.0-alpha.4/go.mod h1:BHeB55AxPhvlNGd+it50rE977ag6xE3bD2RluSDeKBA=
 github.com/project-flogo/core v0.9.0-alpha.4.0.20190116201316-ba1703f1f4cf h1:8ix+yZGUm+bliXHrm2jKTFUV6IPa+3U4DR9s9dq326Y=
 github.com/project-flogo/core v0.9.0-alpha.4.0.20190116201316-ba1703f1f4cf/go.mod h1:BHeB55AxPhvlNGd+it50rE977ag6xE3bD2RluSDeKBA=
+github.com/project-flogo/core v0.9.0-alpha.4.0.20190130143800-ebaa4200c4ac h1:oqNBrD483hgLQ03/HwBGWE4/TyEkjMN8GrMPCyHk1sY=
+github.com/project-flogo/core v0.9.0-alpha.4.0.20190130143800-ebaa4200c4ac/go.mod h1:Dof6t60n/nvN7aPpoUz97JL+VIKdsYMbhqwN++WCdz8=
 github.com/project-flogo/microgateway v0.0.0-20181026195051-c08a8101f0fd h1:QygHL8OtIcfuJCJYKnwWbGYRtSmESLBGW/v8keGPKQ8=
 github.com/project-flogo/microgateway v0.0.0-20181026195051-c08a8101f0fd/go.mod h1:Aq5ARClWmebWsFcSVi4y2OAdwj9B23+qv22C/MN9GGY=
 github.com/project-flogo/microgateway v0.0.0-20181031220752-df3c9a0729a8 h1:ZGVrO0tINuOqFH9XJxhIjPQRyyPkFr9SZ+ydXOMkNyI=
@@ -53,6 +55,8 @@ github.com/project-flogo/microgateway v0.0.0-20181212150716-df8bf5d39e5f h1:SGrK
 github.com/project-flogo/microgateway v0.0.0-20181212150716-df8bf5d39e5f/go.mod h1:0+g0n47fz/IRraqrn58fpZ03/yKmHIRtgvIAUxXCTIM=
 github.com/project-flogo/microgateway v0.0.0-20190116202549-05c5fa335740 h1:1whG3kG7emOABV1Pb92L9rdk+PT1OILXkBnJ2tTcfKU=
 github.com/project-flogo/microgateway v0.0.0-20190116202549-05c5fa335740/go.mod h1:BA3q9hZTUbZ6BEEEru5jV1Tf4/3lrkJSKsfbet00R+M=
+github.com/project-flogo/microgateway v0.0.0-20190123211624-c3c60c0efa8d h1:zycS+cHxPiOd6LYNzVgP/JT6yBC8vlxj5hCsDzVpAeg=
+github.com/project-flogo/microgateway v0.0.0-20190123211624-c3c60c0efa8d/go.mod h1:BA3q9hZTUbZ6BEEEru5jV1Tf4/3lrkJSKsfbet00R+M=
 github.com/sirupsen/logrus v1.1.1/go.mod h1:zrgwTnHtNr00buQ1vSptGe8m1f/BbgsPukg8qsT7A+A=
 github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
