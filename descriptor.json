@@ -1,0 +1,39 @@
+{
+  "name": "jsexec",
+  "type": "flogo:activity",
+  "version": "0.0.1",
+  "title": "Javascript Execution",
+  "description": "Executes javascript",
+  "homepage": "https://github.com/project-flogo/microgateway/tree/master/activity/anomaly",
+  "settings": [
+    {
+      "name": "script",
+      "type": "string",
+      "description": "The javascript code to evaluate"
+    }
+  ],
+  "input": [
+    {
+      "name": "parameters",
+      "type": "object",
+      "description": "Key/value pairs representing parameters to evaluate within the context of the script"
+    }
+  ],
+  "output": [
+    {
+      "name": "error",
+      "type": "bool",
+      "description": "true if there is an error"
+    },
+    {
+      "name": "errorMessage",
+      "type": "string",
+      "description": "The error message"
+    },
+    {
+      "name": "result",
+      "type": "object",
+      "description": "The result object from the javascript code"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ The available response `outputs` are as follows:
 
 | Name   |  Type   | Description   |
 |:-----------|:--------|:--------------|
-| error | bool | The HTTP status code of the response |
+| error | bool | true if there is an error |
 | errorMessage | string | The error message |
 | result | JSON object | The result object from the javascript code  |
 
